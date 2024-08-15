@@ -1,17 +1,17 @@
-
-name: Node.js CI
+name: Testing
 
 on:
   push:
-    branches: [ "main" ]
-
+    branches: ["main"]
 
 jobs:
   platzi:
-
     runs-on: ubuntu-latest
 
-
     steps:
-      - name: 'Hello word'
+      - name: "Hello word"
         run: echo "hello word"
+      - name: "dime la fecha"
+        run: date
+      - name: "rectorios"
+        run: ls -la
